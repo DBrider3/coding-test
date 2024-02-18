@@ -24,16 +24,8 @@ while start < end:
         end -= 1
     else:
         count += 1
+        start += 1
         end -= 1
 
 print(count)
-
-
-
-
-
-
-
-
-
 
