@@ -1,6 +1,3 @@
+import math
 def solution(n):
-    answer = 2
-    for i in range(1, n // 2):
-        if i * i == n:
-            answer = 1
-    return answer
+    return 1 if int(math.sqrt(n)) ** 2 == n else 2
