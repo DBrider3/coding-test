@@ -1,2 +1,4 @@
-str1, str2 = input().strip().split(' ')
-print(str1+str2)
+# version 1
+# print(input().strip().replace(' ', ''))
+# version 2
+print(''.join(input().strip().split(' ')))
