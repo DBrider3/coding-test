@@ -1,2 +1,2 @@
 def solution(a, b):
-    return max(int(''.join(str(a) + str(b))), int(''.join(str(b) + str(a))))
+    return int(max(f'{a}{b}', f'{b}{a}'))
