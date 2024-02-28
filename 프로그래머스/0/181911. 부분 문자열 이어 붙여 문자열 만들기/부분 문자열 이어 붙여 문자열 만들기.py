@@ -1,7 +1,3 @@
-def solution(m, p):
+def solution(my_strings, parts):
     answer = ''
-    for s, e in zip(m, p):
-        print(s, e)
-        answer += s[e[0]:e[1] + 1]
-    
     return answer
