@@ -1,4 +1,3 @@
 def solution(todo_list, finished):
-    a = dict(zip(todo_list, finished))
-    return [key for key, value in a.items() if not value]
+    return [key for key, value in dict(zip(todo_list, finished)).items() if not value]
     
