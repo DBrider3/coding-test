@@ -1,6 +1,2 @@
 def solution(myString):
-    myString = list(myString)
-    for i, s in enumerate(myString):
-        if s < 'l':
-            myString[i] = 'l'
-    return ''.join(myString)
+    return ''.join('l' if i < 'l' else i for i in myString)
