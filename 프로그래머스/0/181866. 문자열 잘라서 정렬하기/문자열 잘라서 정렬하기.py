@@ -1,3 +1,3 @@
 def solution(myString):
-    a = sorted(myString.split('x'))
-    return [i for i in a if i]
+    return sorted(i for i in myString.split('x') if i)
+    
