@@ -1,10 +1,6 @@
 def solution(num_list, n):
     answer = []
 
-    tmp = []
-    for num in num_list:
-        tmp.append(num)
-        if len(tmp) == n:
-            answer.append(tmp)
-            tmp = []
+    for i in range(0, len(num_list), n):
+        answer += [num_list[i:i + n]]
     return answer
